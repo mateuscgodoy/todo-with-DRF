@@ -9,7 +9,7 @@ class TodoSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Todo
-        fields = ["url", "id", "text", "completed"]
+        fields = ["url", "id", "text", "completed", "owner"]
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
